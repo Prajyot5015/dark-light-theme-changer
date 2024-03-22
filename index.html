@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Light Theme Change Using DOM </title>
+    <style>
+        .container-dark {
+            border: 1px solid #fff;
+            width: 80%;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+
+        .title {
+            color: blue;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .description {
+            font-size: 25px;
+            padding: 0 20px;
+            padding-bottom: 20px;
+        }
+
+        .theme-icon {
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            margin-left: 20px;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .active {
+            border: 1px solid #000;
+        }
+
+        .theme-dark {
+            background-color: #393e46;
+            color: #fff;
+        }
+
+        .theme-light {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        .container-light {
+            border: 1px solid black;
+            width: 80%;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="container-light" id="container">
+        <h1 class="title">Dark / Light Mode</h1>
+        <img src="./png/dark.png" class="theme-icon" id="dark" onclick="dark()" />
+        <img src="./png/light.png" class="theme-icon active" id="light" onclick="light()" />
+
+        <P class="description">In terms of web design, a light-on-dark color scheme (also called black mode, dark mode,
+            dark theme, or night mode) is a color scheme that uses light-colored text, icons, and UI elements on a dark
+            background. The opposite color scheme is called dark-on-light color scheme, light mode, or light theme.</P>
+
+    </div>
+
+  
+</body>
+</html>
