@@ -83,7 +83,19 @@
             const containerElement = document.getElementById('container');
             containerElement.className = "container-dark";
         }
-       
+        function light() {
+            const imgDark = document.getElementById('dark');
+            imgDark.classList.remove('active');
+
+            const imgLight = document.getElementById('light');
+            imgLight.classList.add('active');
+
+            const bodyElement = document.getElementById('body');
+            bodyElement.className = "theme-light";
+
+            const containerElement = document.getElementById('container');
+            containerElement.className = "container-light";
+        }
     </script>
 </body>
 </html>
