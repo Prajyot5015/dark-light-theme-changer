@@ -69,6 +69,21 @@
 
     </div>
 
-  
+    <script>
+        function dark() {
+            const imgDark = document.getElementById('dark');
+            imgDark.classList.add('active');
+
+            const imgLight = document.getElementById('light');
+            imgLight.classList.remove('active');
+
+            const bodyElement = document.getElementById('body');
+            bodyElement.className = "theme-dark";
+
+            const containerElement = document.getElementById('container');
+            containerElement.className = "container-dark";
+        }
+       
+    </script>
 </body>
 </html>
